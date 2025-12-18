@@ -232,6 +232,90 @@
 }
 
 
+/*------------------------------------Community---------------------------------------*/
+
+.section-community > * {
+    border: 2px solid gray;
+    border-radius: 7px;
+    padding: 10px;
+    text-align: center;     
+}
+
+.section-community {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: grid;
+    grid-template: 
+    "text" auto
+    "cards" auto /
+    80%;
+
+    .cont-text-community {
+        grid-area: text;
+        background-color: cornflowerblue;        
+    }
+
+    .cont-cards-community {
+        grid-area: cards;
+        background-color: darkgoldenrod;
+    }
+
+    @media (min-width: 992px) {
+        grid-template: 
+        "text" auto
+        "cards" auto /
+        80%;
+    }
+}
+
+.cont-text-community .title-community{
+    padding: 5px;
+    font-size: 1.3rem;
+}
+
+.cont-text-community .text-community{
+    padding: 5px;
+    font-size: 0.9rem;
+}
+
+/*Organizacion de las cards responsive*/
+.cont-cards-community > * {
+    border: 2px solid gray;
+    border-radius: 7px;
+    padding: 10px;
+    text-align: center; 
+    gap: 5px;
+}
+
+.cont-cards-community {
+    gap: 5px;
+    display: grid;
+    grid-template: 
+    "card1" auto
+    "card2" auto
+    "card3" auto /
+    1fr;
+
+    .card-organisations {
+        grid-area: card1;
+    }
+
+    .card-associations {
+        grid-area: card2;
+    }
+
+    .card-groups {
+        grid-area: card3;
+    }
+
+    @media (min-width: 992px) {
+        grid-template: 
+        "card1 card2 card3" auto /
+        1fr 1fr 1fr;
+    }
+}
+
 /*------------------------------------Pixel---------------------------------------*/
 
 .section-pixel > * {
@@ -327,6 +411,147 @@
 }
 
 
+/*------------------------------------Local Business---------------------------------------*/
+
+.section-business > * {
+    border: 2px solid gray;
+    border-radius: 7px;
+    padding: 10px;
+    text-align: center; 
+}
+
+.section-business {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: grid;
+    grid-template: 
+    "text" auto
+    "info" auto /
+    90%;
+
+    .cont-text-business {
+        grid-area: text;
+    }
+
+    .info-business {
+        grid-area: info;
+    }
+
+    @media (min-width: 992px) {
+        grid-template: 
+        "text info" auto /
+        45% 45%;
+    }
+}
+
+/*texto*/
+
+
+/*info*/
+
+.info-business {
+    display: grid;
+    grid-template: 
+    "item1" auto
+    "item2" auto
+    "item3" auto
+    "item4" auto /
+    100%;
+
+    .item-members {
+        grid-area: item1;
+    }
+    .item-event {
+        grid-area: item2;
+    }
+    .item-clubs {
+        grid-area: item3;
+    }
+    .item-payments {
+        grid-area: item4;
+    }
+
+    @media (min-width: 992px) {
+        grid-template: 
+        "item1 item2" auto
+        "item3 item4" auto /
+        1fr 1fr;
+    }
+}
+
+/*List info-business*/
+.title-card-business {
+    font-size: 1.3rem;
+}
+
+.text-card-business {
+    font-size: 0.9rem;
+}
+
+.cont-img img {
+    padding: 5px;
+}
+
+/*Item 1*/
+.item-members > *{
+    border: 2px solid gray;
+    border-radius: 7px;
+    padding: 10px;
+    text-align: left;     
+}
+
+.item-members{
+    display: grid;
+    grid-template: 
+    "img text" auto /
+    1fr 5fr;
+}
+
+/*Item 2*/
+.item-event > *{
+    border: 2px solid gray;
+    border-radius: 7px;
+    padding: 10px;
+    text-align: left;     
+}
+
+.item-event {
+    display: grid;
+    grid-template: 
+    "img text" auto /
+    1fr 5fr;
+}
+
+/*Item 3*/
+.item-clubs > *{
+    border: 2px solid gray;
+    border-radius: 7px;
+    padding: 10px;
+    text-align: left;     
+}
+
+.item-clubs {
+    display: grid;
+    grid-template: 
+    "img text" auto /
+    1fr 5fr;
+}
+
+/*Item 4*/
+.item-payments > *{
+    border: 2px solid gray;
+    border-radius: 7px;
+    padding: 10px;
+    text-align: left;     
+}
+
+.item-payments {
+    display: grid;
+    grid-template: 
+    "img text" auto /
+    1fr 5fr;
+}
 
 /*------------------------------------Design---------------------------------------*/
 
@@ -421,4 +646,254 @@
 .cont-img-hero img {
     width: 100%;
 }
+
+
+/*------------------------------------Customers---------------------------------------*/
+
+.section-customers > * {
+    border: 2px solid gray;
+    border-radius: 7px;
+    padding: 10px;
+    text-align: center; 
+}
+
+.section-customers {
+    margin-bottom: 15px;
+    display: grid;
+    grid-template: 
+    "parrafo" auto
+    "img" auto /
+    100%;
+
+    .img-customers {
+        grid-area: img;
+        background-color: aqua;
+    }
+    .text-customers {
+        grid-area: parrafo;
+        background-color: cadetblue;
+    }
+
+    @media (min-width: 992px) {
+        grid-template: 
+        "img parrafo" auto /
+        1fr 2fr;
+    }
+}
+
+
+/*Organizar sesion de parrafo con botones*/
+
+.text-customers > * {
+    border: 2px solid gray;
+    border-radius: 7px;
+    padding: 10px;
+    text-align: center;
+}
+
+.text-customers {
+    display: grid;
+    grid-template: 
+    "parrafo" auto
+    "buttons" auto /
+    100%;
+
+    .parrafo-customers {
+        grid-area: parrafo;
+    }
+
+    .buttons-customers {
+        grid-area: buttons;
+    }
+
+    @media (min-width: 992px) {
+        grid-template: 
+        "parrafo" auto
+        "buttons" auto /
+        100%;
+    }
+}
+
+/*manejo de imagenes finales*/
+.buttons-customers > * {
+    border: 2px solid gray;
+    border-radius: 7px;
+    padding: 10px;
+    text-align: center;
+}
+
+.buttons-customers > * {
+    border: 2px solid gray;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.buttons-customers {
+    width: 100%;
+    gap: 2px;
+    display: grid;
+    grid-template: 
+    "img1 img2" 50px
+    "img3 img4" 50px
+    "img5 img6" 50px 
+    "img7 img7" 50px /
+    1fr 1fr;
+
+    .company-img1 {
+        grid-area: img1;
+    }
+
+    .company-img2 {
+        grid-area: img2;
+    }
+
+    .company-img3 {
+        grid-area: img3;
+    }
+
+    .company-img4 {
+        grid-area: img4;
+    }
+
+    .company-img5 {
+        grid-area: img5;
+    }
+
+    .company-img6 {
+        grid-area: img6;
+    }
+
+    .meet-customers {
+        grid-area: img7;
+    }
+
+    @media (min-width: 992px) {
+        grid-template: 
+        "img1 img2 img3 img4 img5 img6 img7" auto /
+        1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+.buttons-customers {
+    width: 100%;   
+}
+
+.buttons-customers img {
+    width: 100%;
+    min-width: 50px;
+    max-width: 50px;
+}
+
+
+/*------------------------------------Marketing---------------------------------------*/
+
+.section-marketing > * {
+    border: 2px solid gray;
+    border-radius: 7px;
+    padding: 10px;
+    text-align: center;     
+}
+
+.section-marketing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: grid;
+    grid-template: 
+    "text" auto
+    "cards" auto /
+    80%;
+
+    .cont-text-marketing {
+        grid-area: text;
+        background-color: cornflowerblue;        
+    }
+
+    .cont-cards-marketing {
+        grid-area: cards;
+        background-color: darkgoldenrod;
+    }
+
+    @media (min-width: 992px) {
+        grid-template: 
+        "text" auto
+        "cards" auto /
+        80%;
+    }
+}
+
+.cont-text-marketing .title-marketing{
+    padding: 5px;
+    font-size: 1.3rem;
+}
+
+.cont-text-marketing .text-marketing{
+    padding: 5px;
+    font-size: 0.9rem;
+}
+
+/*Organizacion de las cards responsive*/
+.cont-cards-marketing > * {
+    border: 2px solid gray;
+    border-radius: 7px;
+    padding: 10px;
+    text-align: center; 
+    gap: 5px;
+}
+
+.cont-cards-marketing {
+    gap: 5px;
+    display: grid;
+    grid-template: 
+    "card1" auto
+    "card2" auto
+    "card3" auto /
+    1fr;
+
+    .card-one{
+        grid-area: card1;
+    }
+
+    .card-two {
+        grid-area: card2;
+    }
+
+    .card-three {
+        grid-area: card3;
+    }
+
+    @media (min-width: 992px) {
+        grid-template: 
+        "card1 card2 card3" auto /
+        1fr 1fr 1fr;
+    }
+}
+
+
+/*------------------------------------Fringilla---------------------------------------*/
+
+.section-fringilla > * {
+    border: 2px solid gray;
+    border-radius: 7px;
+    padding: 10px;
+    text-align: center;  
+}
+
+.section-fringilla {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    gap: 10px;
+    display: grid;
+    grid-template: 
+    "title" auto
+    "button" auto /
+    60%;
+}
+
+
+
+
+
 
