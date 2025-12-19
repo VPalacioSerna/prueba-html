@@ -4,6 +4,7 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
+    color: #818182;
 }
 
 body {
@@ -15,8 +16,6 @@ body {
 
 /*Container en grid*/
 .grid-container > * {
-    border: 2px solid gray;
-    border-radius: 7px;
     text-align: center; 
 }
 
@@ -27,22 +26,22 @@ body {
     grid-template: 
     "header" auto
     "main" 1fr
-    "footer" 100px /
+    "footer" auto /
     100%;
 
     .header {
         grid-area: header;
-        background-color: aqua;
+        background-color: #F5F7FA;
     }
 
     .main {
         grid-area: main;
-        background-color: bisque;
+        background-color: #FFFFFF;
     }
 
     .footer {
         grid-area: footer;
-        background-color: cadetblue;
+        background-color: #263238; /*#263238 color de fondo*/
     }
 
     @media (min-width: 992px) {
@@ -50,7 +49,7 @@ body {
         grid-template: 
             "header" 100px
             "main" 1fr
-            "footer" 100px /
+            "footer" auto /
             100%;
     }
 }
@@ -60,8 +59,6 @@ body {
 
 .container-header > * {
     box-sizing: border-box;
-    border: 2px solid gray;
-    border-radius: 7px;
     padding: 10px;
     text-align: center; 
     width: 100%;
@@ -80,17 +77,14 @@ body {
 
     .container-logo {
         grid-area: logo;
-        background-color: cornflowerblue;
     }
 
     .container-nav {
         grid-area: nav;
-        background-color: rgb(224, 143, 118);
     }
 
     .container-login {
-       grid-area: login; 
-       background-color: rgb(173, 128, 221);
+    grid-area: login; 
     }
 
     @media (min-width: 992px) {
@@ -113,7 +107,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #54BD95;
+    color: black;
     font-size: 2.5rem;
 
     @media (min-width: 992px) {
@@ -143,11 +137,11 @@ body {
 }
 
 .item-nav a {
-    color: gray;
+    color: black;
 }
 
 .item-nav:first-child a {
-    color: black;
+    color: black;    
 }
 
 /*navegador */
@@ -166,11 +160,11 @@ body {
 }
 
 .item-nav-login a{
-    color: gray;
+    color: #4CAF4F;
 }
 
 .item-nav-signup {
-    background-color: #54BD95;
+    background-color: #4CAF4F;
     padding: 8px;
     border-radius: 10px;
 }
